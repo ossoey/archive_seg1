@@ -7,25 +7,44 @@
     <body>
         <div id="centered">
             <header>
-                <h1>Segmentation</h1>
                 <nav>
-                    <ul>
-                        <li><a href="">Segment</a></li>
-                        <li><a href="">Target</a></li>
-                        <li><a href="">Function</a></li>
-                        <li><a href="">Single</a></li>
-                        <li><a href="">List</a></li>
-                        <li><a href="">Output</a></li>
-                        
-                    </ul>
-                </nav> 
+                    <div class="nav-logo"><h1>Segmentation</h1></div>
+                    <div class="nav-items">
+                        <ul>
+                            <li><a href="#"></a></li>                            
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#">Segment</a></li>
+                            <li><a href="#">Target</a></li>
+                            <li><a href="#">Function</a></li>
+                            <li><a href="#">Single</a></li>
+                            <li><a href="#">List</a></li>
+                            <li><a href="#">Output</a></li>
+                            
+                        </ul>
+                    </div> 
+                    <div class="nav-toggle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </nav>
             </header>
-            <main>
 
+            <main>
+             <p>Element de langage</p>
             </main>
             <footer>
                 <p>Copyrights &copy;2023</p>
             </footer>
         </div>
+        <script>
+            let navtoggle = document.querySelector('.nav-toggle');
+            let navitems = document.querySelector('.nav-items');
+             navtoggle.addEventListener('click',()=>{
+                navitems.classList.toggle('show')   
+             });
+
+        </script>
     </body>
 </html>
